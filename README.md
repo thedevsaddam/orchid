@@ -8,6 +8,6 @@ Golang boilerplate in MVC style using gin-gonic framework with gorm ORM.
     ```
     go get -u github.com/kardianos/govendor
     ```
-* Install the dependencies using `govendor update vendor` command
+* Install the dependencies using `govendor sync` command
 
 

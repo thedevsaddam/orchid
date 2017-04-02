@@ -2,8 +2,10 @@ package general
 
 import (
 	"bufio"
-	"os"
+	"crypto/sha1"
+	"fmt"
 	"io"
+	"os"
 )
 
 func Scanner() string {
@@ -13,7 +15,7 @@ func Scanner() string {
 		str = scanner.Text()
 		break
 	}
-	return str;
+	return str
 }
 
 func Copy(dst, src string) error {
@@ -33,4 +35,11 @@ func Copy(dst, src string) error {
 		return err
 	}
 	return cerr
+}
+
+func Sha1(s string) string {
+	h := sha1.New()
+	h.Write([]byte(s))
+	bs := h.Sum(nil)
+	return fmt.Sprintf("%x", bs)
 }

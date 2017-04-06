@@ -14,6 +14,8 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 * Go to the `$GOPATH/src/orchid` and install dependencies using `govendor sync` command
 
 ### Todo
+* Session
+* OAuth
 * Fixing inconstant codes
 * Find out performance issues
 * Request validation

@@ -7,6 +7,7 @@ import (
 
 	_ "app/config"
 	"app/routes"
+	"app/views"
 	"os"
 )
 
@@ -31,7 +32,11 @@ func main() {
 		return
 	})
 
+	//serve static files
 	router.Static("/public", "./public")
+
+	//load multiple templates
+	router.HTMLRender = views.LoadTemplates()
 
 	router.Run(":" + os.Getenv("APP_PORT"))
 }

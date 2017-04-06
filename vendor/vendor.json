@@ -31,6 +31,18 @@
 			"revisionTime": "2016-02-19T21:45:06Z"
 		},
 		{
+			"checksumSHA1": "cPLziYD4csZS24RHdc4XZzmc6rs=",
+			"path": "github.com/gin-contrib/multitemplate",
+			"revision": "7d1ec4f2119934983b106718265783fc48a38b77",
+			"revisionTime": "2017-03-19T07:00:17Z"
+		},
+		{
+			"checksumSHA1": "VsCM/At7eG3zGMByVmXQLAyZXWM=",
+			"path": "github.com/gin-gonic/contrib/renders/multitemplate",
+			"revision": "ffa12cf90b52a4af3ae604f6452e61f8218a517c",
+			"revisionTime": "2017-02-26T15:24:26Z"
+		},
+		{
 			"checksumSHA1": "4YaKAmGadtGxXcbmooIUC64B4hM=",
 			"path": "github.com/gin-gonic/contrib/static",
 			"revision": "ffa12cf90b52a4af3ae604f6452e61f8218a517c",

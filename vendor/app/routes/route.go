@@ -15,8 +15,9 @@ func InitRoutes(router gin.Engine) {
 
 	//root route
 	router.GET("/", welcome.Welcome)
+	router.GET("/about", welcome.About)
 	router.GET("/users", users.FetchUsers)
-
+	router.GET("/api/v1/welcome", welcome.WelcomeApi)
 	//route group
 	v1 := router.Group("/api/v1").Use(example.Example())
 	{

@@ -28,7 +28,7 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 * Environment management  package [godotenv](https://github.com/joho/godotenv)
 
 ### Contribution
-As it is the very begining fo *Orchid* boilerplate, we need a good amount for contribution from you. 
+As it is the very begining of *Orchid* boilerplate, we need a good amount for contribution from you. 
 If you are interested to contribute please feel free to send pull request.
 
 ### License

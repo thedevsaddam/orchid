@@ -1,6 +1,6 @@
 Orchid
 =================
-Golang boilerplate in MVC style using gin-gonic framework with gorm ORM.
+Golang MVC style boilerplate using gin-gonic framework with gorm ORM.
 ![Orchid](public/orchid.jpg)
 ### Installation
 * Go to your `$GOPATH/src` and clone the directory using `git clone https://github.com/thedevsaddam/orchid.git`

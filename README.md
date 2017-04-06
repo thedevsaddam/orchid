@@ -20,7 +20,7 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 * Security
 
 ### Credits
-* routing and templating [gin-gonic](https://gin-gonic.github.io/gin)
+* Routing and templating [gin-gonic](https://gin-gonic.github.io/gin)
 * Object-relational mapping [gorm](https://github.com/jinzhu/gorm)
 * Dependency management package [govendor](https://github.com/kardianos/govendor)
 * Environment management  package [godotenv](https://github.com/joho/godotenv)

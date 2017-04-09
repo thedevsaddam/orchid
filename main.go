@@ -5,6 +5,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
+	"app/config"
 	_ "app/config"
 	"app/routes"
 	"app/views"
@@ -35,6 +36,10 @@ func main() {
 
 	//serve static files
 	router.Use(static.Serve("/", static.LocalFile("./public", true)))
+
+	//initialize session
+	config.InitializeSession(*router)
+
 	//load multiple templates
 	router.HTMLRender = views.LoadTemplates()
 

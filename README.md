@@ -10,16 +10,24 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
     ```
     go get -u github.com/kardianos/govendor
     ```
-    
+
 * Go to the `$GOPATH/src/orchid` and install dependencies using `govendor sync` command
 
+* Copy `.env.example` to `.env` and set your configurations.
+
+* Run `go build` to build binary file and to start the application use `./orchid`
+
+
 ### Todo
-* Session
-* OAuth
-* Fixing inconstant codes
-* Find out performance issues
-* Request validation
-* Security
+- [ ] Session
+- [ ] OAuth2
+- [ ] Fixing inconstant codes
+- [ ] Request validation
+- [ ] Add some helper function
+- [ ] Security
+- [ ] Find out performance issues
+- [ ] Benchmarking
+
 
 ### Credits
 * Routing and templating [gin-gonic](https://gin-gonic.github.io/gin)
@@ -28,10 +36,8 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 * Environment management  package [godotenv](https://github.com/joho/godotenv)
 
 ### Contribution
-As it is the very begining fo *Orchid* boilerplate, we need a good amount for contribution from you. 
+As it is the very begining of *Orchid* boilerplate, we need a good amount for contribution from you.
 If you are interested to contribute please feel free to send pull request.
 
 ### License
 The **Orchid** is a open-source software licensed under the [MIT License](LICENSE.md).
-
-

@@ -1,14 +1,14 @@
 package main
 
 import (
-	"runtime"
-
-	"github.com/gin-gonic/gin"
-
 	"app/config"
 	"app/routes"
 	"app/views"
+	"runtime"
+
 	"github.com/gin-contrib/static"
+	"github.com/gin-gonic/gin"
+
 	"os"
 )
 
@@ -23,6 +23,9 @@ func main() {
 	//instantiate route
 	router := gin.Default()
 
+	//initialize session
+	router.Use(config.InitializeSession())
+
 	//initialize the routes
 	routes.InitRoutes(*router)
 
@@ -36,11 +39,9 @@ func main() {
 	//serve static files
 	router.Use(static.Serve("/", static.LocalFile("./public", true)))
 
-	//initialize session
-	router.Use(config.InitializeSession())
-
 	//load multiple templates
 	router.HTMLRender = views.LoadTemplates()
 
+	//start the server
 	router.Run(":" + os.Getenv("APP_PORT"))
 }

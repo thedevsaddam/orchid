@@ -8,6 +8,7 @@ import (
 	_ "app/config"
 	"app/routes"
 	"app/views"
+	"github.com/gin-contrib/static"
 	"os"
 )
 
@@ -33,8 +34,7 @@ func main() {
 	})
 
 	//serve static files
-	router.Static("/public", "./public")
-
+	router.Use(static.Serve("/", static.LocalFile("./public", true)))
 	//load multiple templates
 	router.HTMLRender = views.LoadTemplates()
 

@@ -19,7 +19,7 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 
 
 ### Todo
-- [ ] Session
+- [x] Session
 - [ ] OAuth2
 - [ ] Fixing inconstant codes
 - [ ] Request validation

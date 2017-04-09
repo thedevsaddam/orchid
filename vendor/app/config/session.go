@@ -15,17 +15,16 @@ func InitializeSession() gin.HandlerFunc {
 		switch sessionDriver {
 		case "cookie":
 			store := sessions.NewCookieStore([]byte(appKey))
-			sessions.Sessions(sessionName, store)
+			return sessions.Sessions(sessionName, store)
 		case "redis":
 			store, _ := sessions.NewRedisStore(10, "tcp", os.Getenv("SESSION_HOST") + ":" + os.Getenv("SESSION_PORT"), "", []byte(appKey))
-			sessions.Sessions(sessionName, store)
+			return sessions.Sessions(sessionName, store)
 		case "memcache":
 			store := sessions.NewMemcacheStore(memcache.New(os.Getenv("SESSION_HOST") + ":" + os.Getenv("SESSION_PORT")), "", []byte(appKey))
-			sessions.Sessions(sessionName, store)
+			return sessions.Sessions(sessionName, store)
 		default:
 			store := sessions.NewCookieStore([]byte(appKey))
-			sessions.Sessions(sessionName, store)
+			return sessions.Sessions(sessionName, store)
 		}
-		c.Next()
 	}
 }

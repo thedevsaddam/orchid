@@ -6,7 +6,6 @@ import (
 	"github.com/gin-gonic/gin"
 
 	"app/config"
-	_ "app/config"
 	"app/routes"
 	"app/views"
 	"github.com/gin-contrib/static"

@@ -38,7 +38,7 @@ func main() {
 	router.Use(static.Serve("/", static.LocalFile("./public", true)))
 
 	//initialize session
-	config.InitializeSession(*router)
+	router.Use(config.InitializeSession())
 
 	//load multiple templates
 	router.HTMLRender = views.LoadTemplates()

@@ -11,7 +11,7 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
     go get -u github.com/kardianos/govendor
     ```
 
-* Go to the `$GOPATH/src/orchid` and install dependencies using `govendor sync` command
+* Go to the `$GOPATH/src/orchid/vendor` directory and install dependencies using `govendor sync` command
 
 * Copy `.env.example` to `.env` and set your configurations.
 
@@ -19,9 +19,17 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 
 
 ### Todo
+- [x] Routing
+- [x] Model
+- [x] Controller
+- [x] Views
 - [x] Session
-- [ ] OAuth2
-- [ ] Fixing inconstant codes
+- [ ] CSRF protection
+- [ ] Caching
+- [ ] Localization
+- [ ] Helpers
+- [ ] OAuth2 server
+- [ ] Fixing inconsistent codes
 - [ ] Request validation
 - [ ] Add some helper function
 - [ ] Security
@@ -30,7 +38,7 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 
 
 ### Credits
-* Routing and templating [gin-gonic](https://gin-gonic.github.io/gin)
+* Routing, session and templating [gin-gonic](https://gin-gonic.github.io/gin)
 * Object-relational mapping [gorm](https://github.com/jinzhu/gorm)
 * Dependency management package [govendor](https://github.com/kardianos/govendor)
 * Environment management  package [godotenv](https://github.com/joho/godotenv)

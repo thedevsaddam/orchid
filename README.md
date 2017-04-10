@@ -21,10 +21,12 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 ### Todo
 - [x] Routing
 - [x] Model
-- [x] Controller
 - [x] Views
+- [x] Controller
 - [x] Session
+- [x] Middleware
 - [ ] CSRF protection
+- [ ] Job Queue
 - [ ] Caching
 - [ ] Localization
 - [ ] Helpers
@@ -46,6 +48,9 @@ or [download the zip file](https://github.com/thedevsaddam/orchid/archive/master
 ### Contribution
 As it is the very begining of *Orchid* boilerplate, we need a good amount for contribution from you.
 If you are interested to contribute please feel free to send pull request.
+
+##### Note:
+I am doing R&D with the project. Don't use it untill it is tagged.
 
 ### License
 The **Orchid** is a open-source software licensed under the [MIT License](LICENSE.md).
